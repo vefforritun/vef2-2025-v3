@@ -51,6 +51,8 @@ Nota skal Prisma til að vinna með gögnin. Gögnin eru eins og í verkefni 2.
 
 Fyrir staðfestingu gögnum væri hægt að nota [Zod, sjá skjölun í Hono](https://hono.dev/docs/guides/validation#with-zod).
 
+Ef verkefni 2 var hýst á Render getur verið að ekki sé hægt að útbúa annan gagnagrunn, þá er hægt að nota aðra hýsingu eða sérstaka gagnagrunnshýsingu, t.d. [Neon](https://neon.tech/).
+
 ### TypeScript
 
 Nota skal TypeScript í verkefninu í gegnum uppsetningu í Hono.
@@ -119,8 +121,9 @@ Sett verða fyrir ([sjá nánar í kynningu á áfanga](https://github.com/veffo
 
 ---
 
-> Útgáfa 0.1
+> Útgáfa 0.2
 
-| Útgáfa | Breyting      |
-| ------ | ------------- |
-| 0.1    | Fyrsta útgáfa |
+| Útgáfa | Breyting         |
+| ------ | ---------------- |
+| 0.1    | Fyrsta útgáfa    |
+| 0.2    | Bæta við um Neon |
