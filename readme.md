@@ -20,12 +20,15 @@ Fyrir gerðir:
 
 - `GET /categories` skilar lista af flokkum:
   - `200 OK` skilað með gögnum á JSON formi.
+  - `500 Internal Error` skilað ef villa kom upp.
 - `GET /categories/:slug` skilar stökum flokki:
   - `200 OK` skilað með gögnum ef flokkur er til.
   - `404 Not Found` skilað ef flokkur er ekki til.
+  - `500 Internal Error` skilað ef villa kom upp.
 - `POST /category` býr til nýjan flokk:
-  - `200 OK` skilað ásamt upplýsingum um flokk.
+  - `201 Created` (eða `200 OK` sem var áður hér) skilað ásamt upplýsingum um flokk.
   - `400 Bad Request` skilað ef gögn sem send inn eru ekki rétt (vantar gögn, gögn á röngu formi eða innihald þeirra ólöglegt).
+  - `500 Internal Error` skilað ef villa kom upp.
 - `PATCH /category/:slug` uppfærir flokk:
   - `200 OK` skilað með uppfærðum flokk ef gekk.
   - `400 Bad Request` skilað ef gögn sem send inn eru ekki rétt.
@@ -39,15 +42,15 @@ Fyrir gerðir:
 Skilgreina þarf (líkt og fyrir gerðir) vefþjónustur til að geta:
 
 - Skoðað spurningar.
+- Skoða spurningar eftir flokk.
 - Búa til spurningu.
 - Breyta spurningu.
-- Uppfæra spurningu.
 
-Það er ákvörðun í útfærslu hvort spurningar og svör séu aðskilin eða ekki.
+Það er ákvörðun í útfærslu hvernig spurningar og spurningar eftir flokk eru aðskildar; og hvort spurningar og svör séu aðskilin eða ekki.
 
 ### Gögn
 
-Nota skal Prisma til að vinna með gögnin. Gögnin eru eins og í verkefni 2.
+Nota skal Prisma til að vinna með gögnin. Gögnin eru eins og í verkefni 2. Ekki þarf að láta gagnagrunn innihalda gögn í byrjun en ef það er gert skal skoða [`Seeding` með Prisma](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding).
 
 Fyrir staðfestingu gögnum væri hægt að nota [Zod, sjá skjölun í Hono](https://hono.dev/docs/guides/validation#with-zod).
 
@@ -127,3 +130,4 @@ Sett verða fyrir ([sjá nánar í kynningu á áfanga](https://github.com/veffo
 | ------ | ---------------- |
 | 0.1    | Fyrsta útgáfa    |
 | 0.2    | Bæta við um Neon |
+| 0.3    | Laga `201` fyrir þegar flokkur búinn til; bæta við um seeding; laga skilgreiningar á þjónustum fyrir spurningar |
