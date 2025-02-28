@@ -45,6 +45,7 @@ Skilgreina þarf (líkt og fyrir gerðir) vefþjónustur til að geta:
 - Skoða spurningar eftir flokk.
 - Búa til spurningu.
 - Breyta spurningu.
+- Eyða spurningu.
 
 Það er ákvörðun í útfærslu hvernig spurningar og spurningar eftir flokk eru aðskildar; og hvort spurningar og svör séu aðskilin eða ekki.
 
@@ -131,3 +132,4 @@ Sett verða fyrir ([sjá nánar í kynningu á áfanga](https://github.com/veffo
 | 0.1    | Fyrsta útgáfa    |
 | 0.2    | Bæta við um Neon |
 | 0.3    | Laga `201` fyrir þegar flokkur búinn til; bæta við um seeding; laga skilgreiningar á þjónustum fyrir spurningar |
+| 0.4    | Bæta við að þurfa að eyða spurningu |
