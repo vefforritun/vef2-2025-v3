@@ -8,7 +8,7 @@
 
 ## Verkefnið
 
-Verkefnið er framhald á [verkefni 1](https://github.com/vefforritun/vef2-2025-v1) og [verkefni 1](https://github.com/vefforritun/vef2-2025-v1).
+Verkefnið er framhald á [verkefni 1](https://github.com/vefforritun/vef2-2025-v1) og [verkefni 2](https://github.com/vefforritun/vef2-2025-v2).
 
 Það snýst um að setja upp vefþjónustur sem vinna með gögnin með [Hono](https://hono.dev/) ásamt því að nota [Prisma](https://www.prisma.io/) fyrir gagnagrunnsvinnsluna.
 
